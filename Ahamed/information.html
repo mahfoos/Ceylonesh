@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Ahamed/style/infor.css" type="text/css">
+    <title>Marble Beach</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1> <span class="highlight">n a c r e </span> Ceylonese</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="../Buddhi/index.html">Home</a></li>
+                    <li><a href="../Ahamed/aboutUs.html">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../Buddhi/feedback.html">Feedback</a></li>
+                    <li><a href="../Sandukith/SiteMap.html">Site Map</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="heading">
+        <h1> Marble Beach </h1>
+    </div>
+    <div id="main">
+        <img src="../Ahamed/image/marble_beach_3.jpg" alt="Marble Beach" width="1000" height="500"><br>
+        <p>
+            It is also known as marble bay beach. It is situated in Trincomalee Natural harbour area.
+            Marble beach is overlooked by the diamond hill. This beach is located in a stunning environment
+            with grass lands, resting huts, rocks, resorts and it is a calm beach with crystal clear blue water.
+            Considered as one of the wonderful place to be visited in Sri Lanka which admires the minds of foreign and
+            as well as local tourists. <br><br>
+
+            <strong>Hideaway on one of the loveliest beaches in the world</strong> <br><br>
+
+            Get away from the city and relax at one of Sri Lanka’s most secluded and restorative beach resorts.
+            Marble Beach Air Force Resort is tucked away in one of the most amazingly beautiful stretches of beach
+            in Trincomalee, on the east coast of Sri Lanka.
+            With soft powdery white sands and clear turquoise waters, Marble Beach is one of the most peaceful and
+            beautiful beaches in the world.
+
+            Marble Beach Resort is designed to blend with the natural beauty of its surroundings.
+            Guests remain close to nature whilst enjoying every modern convenience.
+            The themed cabanas, each boasting a distinct style, are full of character and provide comfort and a
+            tranquility that is seldom found elsewhere.
+            There's no better place to bask in the sun and listen to the whispers of the ocean breezes as you plan
+            your stay in the magical east coast of Sri Lanka.
+        </p>
+        <div class="slideshow">
+
+            <div class="mySlides fade">
+                <div class="slide_number">1 / 4</div> <img src="../Ahamed/image/marble_beach_1.jpg" width="600" height="400">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide_number">2 / 4</div> <img src="../Ahamed/image/marble_beach_2.jpg" width="600" height="400">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide_number">3 / 4</div> <img src="../Ahamed/image/marble_beach_3.jpg" width="600" height="400">
+            </div>
+            <div class="mySlides fade">
+                <div class="slide_number">4 / 4</div> <img src="../Ahamed/image/marble_beach_4.jpg" width="600" height="400">
+            </div>
+
+
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a> 
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div> <br>
+
+        <div class="squre-box">
+            <span class="squre" onclick="currentSlide(1)"></span>
+            <span class="squre" onclick="currentSlide(2)"></span>
+            <span class="squre" onclick="currentSlide(3)"></span>
+            <span class="squre" onclick="currentSlide(4)"></span>
+
+        </div>
+
+        <script>
+         var slideIndex = 1; 
+         showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n); 
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n); 
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("squre");
+            if (n > slides.length) {
+                slideIndex = 1 
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length 
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+             dots[slideIndex - 1].className += " active";
+            } 
+
+            </script>
+
+        <div class="content">
+            <p>
+                Marble Beach Resort offers a wide range of activities such as snorkelling
+                the perfect way to discover the wonders of the Indian Ocean and a preferred activity of visitors to
+                Trincomalee.
+                There is also a beach volleyball court for the sporty visitor. Our staff are more than happy to help
+                you organize on- and off-site activities
+                of your choice such as hiking expeditions for the adventurous. You will find Marble Beach Resort the
+                perfect base for your East Coast stay,
+                with its incredible natural beauty, restorative peace, exciting activities and indulgent culinary
+                experiences..
+            </p>
+
+        </div>
+    </div>
+    <footer>
+        <p>nacre Ceylonese inc. Copyright &copy; 2020.</p>
+    </footer>
+</body>
+
+</html>

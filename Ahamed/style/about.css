@@ -1,0 +1,155 @@
+@font-face{
+  src: url(../font/ShadowsIntoLight-Regular.ttf);
+  font-family: Shadows;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    background-image: url(../image/back.jpg);
+    
+}
+  .container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  header a{
+    color:#f4f4f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  header{
+    background:#FFB94E;
+    display: block;
+    color: #f4f4f4;
+    padding-top: 15px;
+    min-height: 15px;
+    border-bottom: #4B77BE 3px solid;  
+  } 
+  header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding{
+    float: left;
+  }
+  
+  header #branding h1{
+    margin: 0;
+  }
+  
+  header nav{
+    float: right;
+    margin-top: 10px;
+  }
+  
+  header .current a{
+    color: #1F4788;
+    font-weight: bold;
+  }
+  
+  header .highlight{
+      color: #1F4788;
+      font-weight: bold;
+      font-family: Shadows;
+  }
+  
+  header a:hover{
+    color:#1F4788;
+    font-weight: bold;
+  } 
+h2{
+   text-align:center;
+   font-family:serif;
+   color:white;
+   font-size:50px;
+   border-radius:20px ;
+   box-shadow:0 0 15px 2px black ;
+   background-color:#1F4788;
+   }
+ 
+   .container-about{
+   cursor: pointer;
+   }
+   .caption {
+   position: relative;
+   overflow: hidden;
+   
+   -webkit-transform: translateZ(0);
+   transform: translateZ(0);
+   }
+   .caption::before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: transparent;
+   }
+   .caption:hover::before {
+   background: rgba(0, 0, 0, .5);
+   }
+   .caption__overlay {
+   position: absolute;
+   top: 0;
+   right:0;
+   bottom: -5;
+   left: 0;
+   padding: 5px;
+   color: white;
+   -webkit-transform: translateY(100%);
+   transform: translateY(100%);
+   transition: -webkit-transform .50s ease-out;
+   transition: transform .50s ease-out;
+   }
+   .caption:hover .caption__overlay {
+   -webkit-transform: translateY(0);
+   transform: translateY(0);
+   }
+   .caption__overlay__title {
+   -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+   transform: translateY( calc(-100% - 10px) );
+   transition: -webkit-transform .50s ease-out;
+   transition: transform .50s ease-out;
+   }
+   .caption:hover .caption__overlay__title {
+   -webkit-transform: translateY(0);
+   transform: translateY(0);
+   }
+   .about-cv {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-top: 100px;
+   padding-left:20px;
+   padding-bottom:50px;
+   font-size:21px;
+   }
+   .profile {
+   flex-basis: 25%;
+   }
+   .cv-description {
+   margin: 50px;
+   color:white;
+   }
+   footer{
+    padding: 10px;
+    margin-top: 10px;
+    color: #f4f4f4;
+    background-color: #FFB94E;
+    text-align: center;
+  }
+.caption__media{
+  border-style: solid;
+  border-image: 10px;
+  border-color: white;
+}
